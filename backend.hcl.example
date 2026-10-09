@@ -1,0 +1,7 @@
+# Copy to backend.hcl (git-ignored). Each project supplies its own key:
+#   terraform init -backend-config="..\backend.hcl" -backend-config="key=p01-hub-spoke.tfstate"
+subscription_id      = "00000000-0000-0000-0000-000000000000"
+resource_group_name  = "rg-tfstate-lab-uks-01"
+storage_account_name = "sttfstatelabuksxxxxxx"
+container_name       = "tfstate"
+use_azuread_auth     = true
